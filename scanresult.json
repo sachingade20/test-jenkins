@@ -1,0 +1,33 @@
+{
+  "image": "myapp:latest",
+  "scanDate": "2023-07-17",
+  "status": "Passed",
+  "vulnerabilities": {
+    "total": 0,
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0
+  },
+  "complianceIssues": {
+    "total": 2,
+    "critical": 1,
+    "high": 1,
+    "medium": 0,
+    "low": 0
+  },
+  "complianceIssuesDetails": [
+    {
+      "policy": "CIS Kubernetes Benchmark",
+      "severity": "Critical",
+      "description": "The image violates CIS Kubernetes Benchmark standards.",
+      "remediation": "Ensure the image complies with CIS Kubernetes Benchmark guidelines."
+    },
+    {
+      "policy": "HIPAA",
+      "severity": "High",
+      "description": "The image does not comply with HIPAA requirements.",
+      "remediation": "Update the image to meet HIPAA compliance standards."
+    }
+  ]
+}
